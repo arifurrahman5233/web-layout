@@ -1,0 +1,168 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    background-color: rgb(0, 0, 0);
+   text-align: center;
+   height: 40px;
+  
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    margin:  10px;
+    padding: 10px;
+}
+.container{
+    
+    
+    display: inline;
+    position: relative;
+   
+    
+}
+.content{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width: 120px ;
+    top: 15px;
+    margin-right: 5px;
+    margin-left: 850px;
+    display: none ;
+    justify-items: center;
+}
+.content a{
+    background-color: rgb(0, 0, 0);
+    display: block;
+}
+.container:hover .content{
+    display: block;
+    transition: 1s;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.login-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    
+    
+}
+.login-form input , button{
+    font-size: 40px;
+    margin-top: 20px;
+    border: 2px solid rgb(0, 0, 0) ;
+    background-color: rgb(235, 235, 235);
+    color: white;
+}
+ .login-form button{
+    
+    background-color: orangered;
+    border-radius: 30px;
+    border: 5px solid black;
+ }
+ .login-form h1{
+     font-size: 40px;
+ }
+ .celender{
+     margin-top: 15%;
+     height: 100px;
+     display: grid;
+     grid-template-columns:repeat(7, 1fr);
+     grid-gap: 1em;
+     margin: 50px 30px;
+     background-color: whitesmoke;
+     margin-bottom: 50%;
+     
+ }
+ .date {
+    background-color: gray;
+    font-size: 3em;
+    margin-top: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+ }
+.other-month{
+    background-color: rgb(71, 67, 66);
+}
+.day{
+    background-color: rgb(0, 0, 0);
+    font-size: 3em;
+    margin-top: 0px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 130px;
+    
+}
+.photo-frame{
+    width: 300px;
+    height: 190px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+.photo-details {
+    position: absolute;
+    width: 300px;
+    top: 0;
+    display: none;
+}
+.photo-frame:hover .photo-details{
+    display: block;
+    background-color:rgba(71, 67, 66, 0.377) ;
+}
+.photo-frame h3{
+    color: white;
+}
+.photo-album{
+    display: flex;
+   flex-wrap: wrap;
+}
+.container-album h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 130px;
+}
+.container-album h3{
+    font-size: 30px;
+   margin-left: 10px;
+}
+.photo-frame:hover .photo{
+    transform: scale(1.5);
+    transition: transform 2s;
+}
+footer{
+    height: 80px;
+    background-color: black;
+}
+footer p{
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
